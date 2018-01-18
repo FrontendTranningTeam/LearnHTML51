@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Html 5.1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- Style Css -->
+    <style>
+      body {
+        font-size:16px;
+        color: #808080;
+      }
+      .html51__image {
+        width: 100%;
+      }
+      .html51__title {
+        font-size: 22px;
+        color: #000000;
+        padding: 20px 0;
+      }
+      .html51__title:hover {
+        cursor: pointer;
+      }
+      .html51__title:focus {
+        outline: none;
+      }
+      .html51__small-title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .html51__browser {
+        margin-bottom: 20px;
+      }
+      .html51__images {
+        margin-bottom: 50px;
+      }
+      .html51__wrap-again {
+        display: inline-block;
+      }
+      .html51__again {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        color: #ffffff;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- [HTML 5.1] -->
+    <div class="html51 pt-5 pb-5">
+      <!-- [Container] -->
+      <div class="container">
+        <h1 class="html51__heading text-center pb-5">HTML 5.1: 10 tính năng mới!</h1>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">1. Lựa chọn nhiều nguồn ảnh cho Responsive Design</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Tag:</span>
+                <span class="html51__tag">&lt;picture&gt;</span> ;
+                <span class="html51__tag">&lt;source srcset="" media="()"&gt;</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + Khai báo nguồn ảnh khác nhau để thích ứng với kích thước khung hình, mật độ điểm ảnh màn hình, loại màn hình và các thông số khác trong thiết kế responsive.
+              </p>
+              <h6 class="html51__browser">
+                <span class="html51__small-title">Trình duyệt hỗ trợ:</span>
+                <span class="html51__tag">Chrome</span> ;
+                <span class="html51__tag">Firefox</span> ;
+                <span class="html51__tag">Edge</span> ;
+                <span class="html51__tag">Safari</span>
+              </h6>
+              <img src="https://i.imgur.com/EBMUaqm.png" alt="" class="html51__images">
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">2. Hiện hoặc ẩn thông tin thêm (&lt;details&gt; &amp; &lt;summary&gt;)</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Tag:</span>
+                <span class="html51__tag">&lt;details&gt;</span> ;
+                <span class="html51__tag">&lt;summary&gt;</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + Ẩn hiện thông tin.
+                <br>
+                + Attribute: <em>open</em>
+              </p>
+              <h6 class="html51__browser">
+                <span class="html51__small-title">Trình duyệt hỗ trợ:</span>
+                <span class="html51__tag">Chrome</span> ;
+                <span class="html51__tag">Firefox</span> ;
+                <span class="html51__tag">Safari</span>
+              </h6>
+              <img src="https://i.imgur.com/cAT6d6l.png" alt="" class="html51__images">
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">3. Tính năng Context Menu</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Tag:</span>
+                <span class="html51__tag">&lt;div contextmenu=""&gt;</span> ;
+                <span class="html51__tag">&lt;menu type="context" id=""&gt;</span> ;
+                <span class="html51__tag">&lt;menuitem label="" icon="" onclick=""&gt;</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + Ẩn hiện thông tin.
+                <br>
+                + Attribute: <em>open</em>
+              </p>
+              <h6 class="html51__browser">
+                <span class="html51__small-title">Trình duyệt hỗ trợ:</span>
+                <span class="html51__tag">Firefox</span>
+              </h6>
+              <img src="https://i.imgur.com/RCfwadW.png" alt="" class="html51__images">
+              <p class="html51__source">
+                <span class="html51__small-title">Source:</span>
+                <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_global_contextmenu">W3school</a>
+              </p>
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">4. Lồng ghép &lt;header&gt; và &lt;footer&gt;</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Tag:</span>
+                <span class="html51__tag">&lt;article&gt;</span> ;
+                <span class="html51__tag">&lt;section&gt;</span> ;
+                <span class="html51__tag">&lt;aside&gt;</span> ;
+                <span class="html51__tag">&lt;nav&gt;</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + Cho phép lồng &lt;header&gt; và &lt;footer&gt; trong nội dung của 1 &lt;section&gt;
+              </p>
+              <h6 class="html51__browser">
+                <span class="html51__small-title">Trình duyệt hỗ trợ:</span>
+                <span class="html51__tag">All</span>
+              </h6>
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">5. Sử dụng mật mã nonce cho &lt;style&gt; và &lt;script&gt;</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Tag:</span>
+                <span class="html51__tag">&lt;style nonce=""&gt;</span>
+                <span class="html51__tag">&lt;script nonce=""&gt;</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + Sử dụng trong bảo mật website.
+              </p>
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">6. Tạo liên kết ngược (rev="")</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Attribute:</span>
+                <span class="html51__tag">(rev="")</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + ...
+              </p>
+              <img src="https://i.imgur.com/o5E1ACW.png" alt="" class="html51__images">
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">7. Sử dụng width=0 trong ảnh</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Attribute:</span>
+                <span class="html51__tag">(width="0")</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + Cho phép ẩn hình ảnh không muốn hiển thị.
+              </p>
+              <h6 class="html51__browser">
+                <span class="html51__small-title">Trình duyệt hỗ trợ:</span>
+                <span class="html51__tag">Chrome</span> ;
+                <span class="html51__tag">Firefox</span> ;
+                <span class="html51__tag">Edge</span> ;
+                <span class="html51__tag">Safari</span> ;
+                <span class="html51__tag">IE</span>
+              </h6>
+              <img src="https://i.imgur.com/tPuzSR5.png" alt="" class="html51__images">
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">8. Rel="nooperner": Tách bối cảnh để ngăn chặn tấn công lừa đảo</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Attribute:</span>
+                <span class="html51__tag">(rel="nooperner")</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + Tách bối cảnh trình duyệt để ngăn chặn tấn công lừa đảo.
+              </p>
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">9. Tạo Option trống</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Tag:</span>
+                <span class="html51__tag">&lt;option value=""&gt;</span> ;
+                <span class="html51__tag">&lt;select&gt;</span> ;
+                <span class="html51__tag">&lt;optgroup&gt;</span> ;
+                <span class="html51__tag">&lt;datalist&gt;</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + Hữu dụng khi không muốn đưa ra gợi ý cho người dùng hoặc phù hợp hơn với thiết kế.
+              </p>
+              <h6 class="html51__browser">
+                <span class="html51__small-title">Trình duyệt hỗ trợ:</span>
+                <span class="html51__tag">Chrome</span> ;
+                <span class="html51__tag">Firefox</span> ;
+                <span class="html51__tag">Edge</span> ;
+                <span class="html51__tag">IE</span>
+              </h6>
+              <img src="https://i.imgur.com/9Mc4IfT.png" alt="" class="html51__images">
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">10. Xử lý Figcaption linh hoạt hơn</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Tag:</span>
+                <span class="html51__tag">&lt;figure&gt;</span> ;
+                <span class="html51__tag">&lt;figcaption&gt;</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + Có thể đặt trong hoặc ngoài thẻ &lt;figure&gt;.
+              </p>
+              <img src="https://i.imgur.com/RRsLELU.png" alt="" class="html51__images">
+            </div>
+          </details>
+        </div>
+        <div class="html51__element">
+          <details class="html51__content">
+            <summary class="html51__title">11. Nhiều kiểu input hơn (month, week &amp; datetime-local)</summary>
+            <!-- [Content] -->
+            <div class="html51__item">
+              <h6 class="html51__tags">
+                <span class="html51__small-title">Attribute:</span>
+                <span class="html51__tag">(type="week")</span> ;
+                <span class="html51__tag">(type="month")</span> ;
+                <span class="html51__tag">(type="datetime-local")</span>
+              </h6>
+              <p class="html51__description">
+                <span class="html51__small-title">Descsription:</span>
+                <br>
+                + <b>Week</b>, <b>Month</b> cho phép chọn một tuần hoặc một tháng.
+                <br>
+                + <b>Datetime-local</b> được chọn giá trị bằng cách select tương tự <b>Week</b> và <b>Month</b>, còn giờ được gõ vào một cách riêng biệt.
+              </p>
+              <h6 class="html51__browser">
+                <span class="html51__small-title">Trình duyệt hỗ trợ:</span>
+                <span class="html51__tag">Chrome</span> ;
+                <span class="html51__tag">Edge</span>
+              </h6>
+              <img src="https://i.imgur.com/eIHB2op.png" alt="" class="html51__images">
+            </div>
+          </details>
+        </div>
+        <div class="html51__element mt-5">
+          <p class="html51__description">
+            <span class="html51__small-title">Tài liệu tham khảo:</span>
+            <br>
+            + <a href="https://viblo.asia/p/co-gi-moi-o-html-51-wgrGVxVMKVa">Viblo</a>
+            + <a href="https://techtalk.vn/html-5-1-co-gi-moi.html">Techtalk</a>
+            + <a href="https://www.sitepoint.com/whats-new-in-html-5-1/">Sitepoint</a>
+            <br>
+            + <a href="https://techtalk.vn/10-tinh-nang-moi-cua-html-5-1-va-huong-dan-su-dung-trong-irl.html">Techtalk</a>
+            + <a href="https://www.hongkiat.com/blog/html-5-1-new-features/">Hongkiat</a>
+            <br>
+            + <a href="https://viblo.asia/p/document-outlines-in-html-51-1VgZv9N9KAw">Viblo</a>
+            + <a href="https://bitsofco.de/document-outlines-in-html-5-1/">Bitsofco</a>
+          </p>
+        </div>
+      </div>
+      <!-- end .end container -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>
