@@ -1,0 +1,280 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Learn html 5.1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f1f1f1;
+        padding: 30px 0;
+        font-family: sans-serif;
+      }
+      .container {
+        width: 768px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+      }
+      .change-list {
+      }
+      .change-list li {
+        padding: 10px 0;
+      }
+      .change-list a {
+        text-decoration: none;
+        color: #333;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+      .detail-list li {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+  <div class="container">
+    <h1>Những thay đổi của HTML5.1 so với HTML5</h1>
+    <ol class="change-list">
+      <li><a href="#section1">Thêm chức năng context menu - dùng thẻ menu + menuitem</a></li>
+      <li><a href="#section2">Thêm chức năng ẩn/hiện nội dung - dùng thẻ details + summary</a></li>
+      <li><a href="#section3">Thêm các input type: month, week, datetime-local</a></li>
+      <li><a href="#section4">Thêm chức năng responsive image</a></li>
+      <li><a href="#section5">Thêm chức năng popup - dùng thẻ dialog</a></li>
+      <li><a href="#section6">Thêm chức năng validating form</a></li>
+      <li><a href="#section7">Cho phép lồng thẻ header, footer</a></li>
+      <li><a href="#section8">Sử dụng width=0 với ảnh</a></li>
+      <li><a href="#section9">Reverse link</a></li>
+      <li><a href="#section10">Phân tách ngữ cảnh trình duyệt để chống lừa đảo</a></li>
+      <li><a href="#section11">Tạo một thẻ option rỗng</a></li>
+      <li><a href="#section12">Sử dụng thẻ figcaption link hoạt hơn</a></li>
+      <li><a href="#section13">Xắp xếp thẻ thead, tfoot (nằm trong thẻ table) đúng với thực tế</a></li>
+      <li><a href="#section14">Thêm đặc tính oncopy, onpaste, oncut</a></li>
+    </ol>
+
+    <section id="section1">
+      <h2>I Contextmenu</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: firefox</li>
+        <li>Sử dụng thẻ menu và menuitem</li>
+        <li>Một menu tag chứa nhiều menuitem tags</li>
+        <li>Mỗi menuitem có thể là 1 trong các kiểu:
+          <ol>
+            <li>checkbox: chọn hay bỏ 1 option</li>
+            <li>radio: chọn 1 option trong 1 nhóm</li>
+            <li>command: xử lý 1 action onclick</li>
+          </ol>
+        </li>
+        <li>Ví dụ:
+          <p contextmenu="popup-menu">Right click on this text (support by firefox)</p>
+          <menu type="context" id="popup-menu">
+            <menuitem type="checkbox">Checkbox</menuitem>
+            <menuitem type="radio">Radio</menuitem>
+            <menuitem type="radio">Male</menuitem>
+            <menuitem type="radio">Femail</menuitem>
+            <menuitem type="command" label="command" onclick="alert('Hello! This is onclick action.')">Command</menuitem>
+          </menu>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section2">
+      <h2>II Ẩn hiện nội dung với thẻ details và summary</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: firefox, chrome, safari</li>
+        <li>Thẻ detail sẽ chứa 1 thẻ summary và nhiều nội dung khác,
+         các nội dung này sẽ được ẩn/hiện khi click vào nội dung thẻ summary</li>
+        <li>Ví dụ:
+          <details>
+            <summary>Thẻ summary - click vào dây để xem thêm thông tin</summary>
+            <p>Đây là những thông tin trong thẻ detail</p>
+            <p>Những thông tin này bị ẩn đi ở mặc định, và được ẩn hiện khi click vào summary element</p>
+          </details>
+          <details>
+            <summary>Thẻ summary</summary>
+            <p>Đây là những thông tin trong thẻ detail</p>
+            <p>Những thông tin này bị ẩn đi ở mặc định, và được ẩn hiện khi click vào summary element</p>
+          </details>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section3">
+      <h1>III Thêm các input type</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: chrome + edge</li>
+        <li>Các input type được thêm: month, week, datetime-local</li>
+        <li>Sử dụng: khi click vào ô input, trình duyệt sẽ xổ xuống 1 cái dropdown <br/>
+         để user có thể chọn tháng/năm (kiểu month), tuần/năm(kiểu week), tháng/ngày/năm/giờ(kiểu datetime-local)</li>
+        <li>Ví dụ:
+          <p data-height="232" data-theme-id="0" data-slug-hash="QaJMdb" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="More input type" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/QaJMdb/">More input type</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section4">
+      <h2>IV Responsive image</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: chrome, firefox, edge, safari</li>
+        <li>Sử dụng thẻ picture cùng với các thuộc tính srcset, size để responsive hay thay đổi hình ảnh trên các màn hình khác nhau.</li>
+        <li>Thuộc tính srcset: thay đổi hình ảnh trên màn hình có độ phân giải khác nhau</li>
+        <li>Thuộc tính sizes: thay đổi width và height của ảnh dựa vào width và height của màn hình</li>
+        <li>Thẻ picture: cho phép thay những ảnh khác nhau dựa theo sự thay đổi kích thước màn hình, đồng thời có thể thêm
+        các thuộc tính srcset và size</li>
+        <li>Ví dụ
+          <p data-height="371" data-theme-id="0" data-slug-hash="qpQPMW" data-default-tab="html" data-user="pein1625" data-embed-version="2" data-pen-title="qpQPMW" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/qpQPMW/">qpQPMW</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section5">
+      <h2>V Chức năng popup với thẻ dialog</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: firefox, chrome</li>
+        <li>Ví dụ:
+          <p data-height="228" data-theme-id="0" data-slug-hash="xpQLLY" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="dialog element" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/xpQLLY/">dialog element</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section6">
+      <h2>VI Chức năng validate form</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: chrome, firefox</li>
+        <li>Ví dụ:
+          <form id="my-form">
+            <input type="text" placeholder="Không điền gì vào ô này" required>
+            <input type="submit" value="Click to submit">
+          </form>
+          <form>
+            <input type="email" placeholder="Thử điền 1 email sai" required>
+            <input type="submit" value="Click to submit">
+          </form>
+          <p>Trình duyệt sẽ validate và thông báo lỗi ngay(nếu có) tới user</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="section7">
+      <h2>VII Lồng thẻ header và footer</h2>
+      <ul class="detail-list">
+        <li>HTML5.1 cho phép lồng thẻ header và footer trong thẻ header và footer khác</li>
+        <li>Nhưng 2 thẻ header/footer lồng nhau không được là cha con trực tiếp của nhau
+          và chúng cùng được bọc bởi 1 thẻ có ngữ nghĩa (section, article, aside)
+        </li>
+        <li>Ví dụ:
+          <pre>
+<code>
+  &lt;article&gt;
+    &lt;header&gt; // thẻ header cha được bọc trong thẻ article
+      &lt;section&gt;
+        &lt;header&gt; // thẻ header con được bọc trong thẻ section
+        &lt;/header&gt;
+      &lt;/section&gt;
+  &lt;/article&gt;
+</code>
+          </pre>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section8">
+      <h2>VIII Sử dụng width=0 với ảnh</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: chrome, firefox, safari, edge, IE</li>
+        <li>Cho phép thêm thuộc tính width="0" vào ảnh, dùng khi bạn không muốn ảnh được hiển thị</li>
+        <li>Ví dụ:
+          <div>
+            <span>Ảnh với width="200px"</span>
+            <img src="1.png" width="200px" alt="">
+          </div>
+          <div>
+            <span>Ảnh với width="0" (không hiển thị)</span>
+            <img src="1.png" width="0" alt="">
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section10">
+      <h2>XI Phân tách ngữ cảnh trình duyệt để tránh lừa đảo</h2>
+      <ul class="detail-list">
+        <li>Sử dụng những link truyền thống có thể khiến trang web dễ bị tấn công lừa đảo</li>
+        <li>HTML5.1 đưa ra thuộc tính rel="noopener" dùng để phân chia ngữ cảnh trình duyệt,
+         từ đó bảo vệ trang web tốt hơn.</li>
+        <li>Ví dụ:
+          <code>
+            <span><</span>a href="#!" rel="noopener"<span>></span>
+            Your link that won't have make trouble
+            <span><</span>/a<span>></span>
+          </code>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section11">
+      <h2>Tạo một thẻ option rỗng</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: chrome, firefox, edge, IE</li>
+        <li>option thường là thẻ con của các thẻ select, optgroup, datalist</li>
+        <li>HTML5.1 cho phép tạo một option rỗng </li>
+        <li>Ví dụ:
+          <select>
+            <option>Option should be selected</option>
+            <option></option>
+            <option>Other option</option>
+            <option>Other option</option>
+            <option>Other option</option>
+          </select>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section12">
+      <h2>XII Sử dụng thẻ figcaption linh hoạt hơn</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: tất cả trình duyệt</li>
+        <li>Thẻ figcation thường được đặt trong thẻ figure và chứa tiêu đề, tên, chú thích của một hình ảnh, bản đồ, tranh ảnh</li>
+        <li>Trước đây, thẻ figcaption chỉ có thể là first child hoặc last child của thẻ figure</li>
+        <li>Từ HTML5.1 thì thẻ figcaption có thể nằm ở bất cứ đâu trong thẻ figure</li>
+      </ul>
+    </section>
+
+    <section id="section13">
+      <h2>XIII Sử dụng thẻ figcaption linh hoạt hơn</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: tất cả trình duyệt</li>
+        <li>HTML5.1 xắp xếp lại các thể thead, tfoot cho đúng với thực tế</li>
+        <li>Tức là thẻ thead phải được đưa lên đầu, còn thẻ tfoot được đưa xuống cuối bảng</li>
+        <li>Ví dụ:
+          <table>
+            <tbody><tr><td>1. thẻ tbody</td></tr></tbody>
+            <tfoot><tr><td>2. thẻ tfooter</td></tr></tfoot>
+            <thead><tr><td>3. thẻ thead</td></tr></thead>
+          </table>
+          <p>=> trình duyệt tự xắp xếp lại các thẻ thead, tfoot</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section14">
+      <h2>XIV Thêm đặc tính oncopy, oncut, onpast</h2>
+      <ul class="detail-list">
+        <li>Trình duyệt hỗ trợ: chrome, firefox, safari</li>
+        <li>Ví dụ oncopy: <input type="text" value="copy this text" oncopy="alert('bạn vừa copy')"></li>
+        <li>Ví dụ oncut: <input type="text" value="cut this text" oncut="alert('bạn vừa cut')"></li>
+        <li>Ví dụ oncopy: <input type="text" placeholder="paste in this field" onpaste="alert('bạn vừa paste')"></li>
+      </ul>
+    </section>
+  </div>
+  </body>
+</html>
