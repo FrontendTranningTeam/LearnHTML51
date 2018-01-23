@@ -1,0 +1,183 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Bootstrap 4</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f1f1f1;
+        padding: 30px 0;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+      }
+      .container {
+        width: 768px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+      }
+      .change-list {
+      }
+      .change-list li {
+        padding: 10px 0;
+      }
+      .change-list a {
+        text-decoration: none;
+        color: #333;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+      .detail-list li {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+  <section class="container">
+    <h1>Bootstrap 4</h1>
+    <ol class="change-list">
+      <li><a href="#section1">CSS/ Components</a></li>
+      <li><a href="#section2">Các trình duyệt hỗ trợ</a></li>
+      <li><a href="#section3">Cải tiến của Bootstrap 4</a></li>
+    </ol>
+
+    <section id="section1">
+      <h3>I. CSS/ Components</h3>
+      <ol class="detail-list">
+        <li>Containers
+          <ul>
+            <li>'.container'
+              <ul>
+                <li>>= 1200px: 1140px</li>
+                <li>>= 992px: 960px</li>
+                <li>>= 768px: 720px</li>
+                <li>>= 576px: 540px</li>
+                <li>< 576px: None</li>
+                <li>Gutter width (khoảng cách giữa 2 cột): 30px (15px mỗi bên) <br> Nếu không muốn có gutter: Đặt '.no-gutters' vào '.row'</li>
+              </ul>
+            </li>
+            <li>'containter-fluid': full-width</li>
+          </ul>
+        </li>
+
+        <li>Responsive Breakpoints
+          <p>@media (min-width: 576px) { ... }: phones</p>
+          <p>@media (min-width: 768px) { ... }: tablet</p>
+          <p>@media (min-width: 992px) { ... }: desktops+</p>
+          <p>@media (min-width: 1200px) { ... }: large desktops+</p>
+        </li>
+
+        <li>Grid System:
+          <ul>
+            <li>Grid system trong Bootstrap được chia làm 12 cột </li>
+            <li>'.row' phải được đặt trong '.container' hoặc '.container-fluid'</li>
+            <li>Nội dung đặt bên trong mỗi cột và mỗi cột phải là thẻ con ngay sau '.row'</li>
+            <li>Grid option: Có 4 loại cột tương ứng với 4 kích cỡ màn hình khác nhau
+                <ul>
+                  <li>'col-' < 576px </li>
+                  <li>'col-sm-' >= 576px </li>
+                  <li>'col-md-' >=768px </li>
+                  <li>'col-lg-' >=960px </li>
+                  <li>'col-xl-' >=1200px </li>
+                  <li>Nesting column: Yes. Như Bootstrap 3</li>
+                  <li>Column Ordering: Yes. Như Bootstrap 3</li>
+                </ul>
+            </li>
+
+            <li>Auto-layout columns - Tự động layout cho cột</li>
+              <ul>
+                <li>Equal width (Width bằng nhau): Đặt '.col' trong '.row' các col sẽ tự động có width bằng nhau</li>
+                <li>One column width (Width cho 1 cột): Đặt '.col-number' trong '.row' '.col-number' này sẽ có width tương ứng với number, các col còn lại sẽ tự động có width bằng nhau</li>
+                <li>Variable width content (Đặt biến cho width): col-{breakpoint}-auto</li>
+                <p data-height="265" data-theme-id="0" data-slug-hash="jZEjpQ" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="[BS4] Auto-layout columns" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/jZEjpQ/">[BS4] Auto-layout columns</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              </ul>
+
+              <li>Alignment</li>
+              <ul>
+                <li>Vertical (chiều dọc)
+                  <ul>
+                    <li>align-items-start</li>
+                    <li>align-items-center</li>
+                    <li>align-items-end</li>
+                  </ul>
+                </li>
+                <li>Horizontal (chiều ngang)
+                <ul>
+                    <li>justify-content-start</li>
+                    <li>justify-content-center</li>
+                    <li>justify-content-end</li>
+                    <li>justify-content-around</li>
+                    <li>justify-content-between</li>
+                  </ul>
+                </li>
+                <p data-height="265" data-theme-id="0" data-slug-hash="QQweve" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="[BS4] Alignments" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/QQweve/">[BS4] Alignments</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script><br>
+              </ul>
+
+              <li>Reordering
+                Dùng '.order-{breakpoint}-number': Trình tự từ số nhỏ tới lớn
+                <p data-height="265" data-theme-id="0" data-slug-hash="gvpOmW" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="[BS4] Reordering" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/gvpOmW/">[BS4] Reordering</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              </li>
+
+              <li>Image responsive: 
+                Nếu ở BS3 thì có class '.img-container' thì sang BS4 dùng '.img-fluid' với hiệu ứng tương tự
+              </li>
+
+              <li>Icon:
+                Nếu ở BS3 thì có icon là Glyphicons, thì sang BS4, bộ icon này không còn được hỗ trợ, vì vậy nếu muốn dùng icon thì phải thêm các thư viện khác
+              </li>
+          </ul>
+        </li>
+
+      </ol>
+    </section>
+
+    <section id="section2">
+      <h3>II. Các trình duyệt hỗ trợ</h3>
+      <ul class="detail-list">
+        <li>Mobiles devices
+          <ol>
+            <li>Firefox</li>
+            <li>Chrome</li>
+            <li>Safari for iOS</li>
+            <li>Android Browser &#38; WebView: Android v5.0+</li>
+            <li>Microsoft Edge</li>
+          </ol>
+        </li>
+
+        <li>Desktop browsers
+          <ol>
+            <li>Firefox</li>
+            <li>Chrome</li>
+            <li>Opera</li>
+            <li>IE for Windows: IE 10+</li>
+            <li>Microsoft Edge for Windows</li>
+            <li>Safari for Mac</li>
+          </ol>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section3">
+      <h3>III. Cải tiến của Bootstrap 4</h3>
+      <ul class="detail-list">
+        <li> BS4 sử dụng flexbox</li>
+
+        <li> BS4 có thêm một vài component mới như: 'card', 'tooltip', 'scrollspy'</li>
+
+        <li>Break point của BS3 khác với BS4, BS4 có thêm điểm nhỏ hơn 768px</li>
+      </ul>
+    </section>
+    
+  </section>
+  </body>
+</html>
