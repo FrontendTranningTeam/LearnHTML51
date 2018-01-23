@@ -217,12 +217,17 @@
           Điều này có thể bị khai thác bởi những kẻ lừa đảo, bằng cách họ chuyển hướng trang web hiện tại thành một trang web mới có nội dung giống hoàn toàn, và bổ xung thêm vài chức năng để người dùng nhập thông tin cá nhân.
         </li>
         <li>Ví dụ:
+          <br>
           <a href="other.html" target="_blank">Click vào link này</a><br>
-          Để phòng tránh trường hợp trên, HTML5.1 đưa thêm một thuộc tính rel="noopener" vào thẻ a, link. Điều này sẽ khiến cho window.opener = null ở trang web mới.
+          Trang other.html (liên kết dưới thẻ a) được thêm 1 dòng code sau:
+          <p data-height="195" data-theme-id="0" data-slug-hash="KZYpvd" data-default-tab="js" data-user="pein1625" data-embed-version="2" data-pen-title="noopener" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/KZYpvd/">noopener</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          <p>Chúng ta có thể thấy đoạn code ở trên sử dụng object window.opener để chuyển hướng được trang web ban đầu</p>
+          <p>Để phòng tránh trường hợp trên, HTML5.1 đưa thêm một thuộc tính rel="noopener" vào thẻ a, link. Điều này sẽ khiến cho window.opener = null ở trang web mới.</p>
           <br>
           <code>
             <span><</span>a href="#!" rel="noopener"<span>></span>
-            Your link that won't have make trouble
+            Click on this link
             <span><</span>/a<span>></span>
           </code>
           <br>
