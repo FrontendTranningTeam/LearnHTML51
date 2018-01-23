@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <title>What is new in HTML5.2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f1f1f1;
+        font-family: sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        color: #333;
+      }
+      .container {
+        width: 1020px;
+        background-color: white;
+        margin: 30px auto;
+        padding: 30px;
+      }
+      .list li {
+        margin-bottom: 20px;
+      }
+      .more-info summary {
+        font-size: 12px;
+        color: red;
+      }
+      .sublist {
+        font-size: 16px;
+        line-height: 25px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Những thay đổi trên HTML5.2 so với HTML5.1</h1>
+      <section class="ss">
+        <h3>Những tính năng thêm mới</h3>
+        <ul class="list">
+          <li>
+            Thêm thẻ <span><</span>dialog<span>></span>
+            <details class="more-info">
+              <summary>Xem thêm</summary>
+              <p>Text here</p>
+            </details>
+          </li>
+          <li>
+            Thuộc tính "nonce" dành cho <span><</span>link<span>></span> được sử dụng trong chính sách bảo mật n
+          </li>
+        </ul>
+      </section>
+
+      <section class="ss">
+        <h3>Thay đổi trong cấu trúc HTML</h3>
+        <ul class="list">
+          <li>
+            Thẻ <span><</span>style<span>></span> có thẻ nằm trong <span><</span>body<span>></span>
+            <details class="more-info">
+              <summary>Xem thêm</summary>
+              <ul class="sublist">
+                <li>HTML5.2 cho phép đặt thẻ style nằm trong thẻ body</li>
+                <li>Điều này có lợi cho việc lập trình theo kiểu chia thành các component (đặt style bên cạnh các component)</li>
+                <li>Nhưng làm như vậy có thể khiến những style đặt ở thẻ head bị khi đè lên, vì thế cần phải cẩn thận hơn khi sử dụng</li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            Có thể dùng nhiều thẻ <span><</span>main<span>></span> trong DOM, nhưng chỉ 1 cái được hiển thị 1 lúc.
+          </li>
+          <li>
+            Thẻ <span><</span>div<span>></span> có thể là con của thẻ <span><</span>dl<span>></span>
+          </li>
+          <li>
+            Thẻ <span><</span>div<span>></span> là con của thẻ <span><</span>dl<span>></span>
+          </li>
+          <li>
+            HTML5.2 cho phép thêm heading (h1, h2,...) vào trong thẻ <span><</span>legend<span>></span>
+            <details class="more-info">
+              <summary>Xem thêm</summary>
+              <ul class="sublist">
+                <li>Thẻ <span><</span>legend<span>></span> là thẻ nằm trong <span><</span>fieldset<span>></span></li>
+                <li>Hữu dụng để chia form thành nhiều khối khác nhau</li>
+                <li>Ví dụ:
+                  <p data-height="422" data-theme-id="0" data-slug-hash="KZbWvp" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="KZbWvp" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/KZbWvp/">KZbWvp</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                </li>
+              </ul>
+            </details>
+
+          </li>
+          <li>
+            Thẻ <span><</span>option<span>></span> nằm trong thẻ <span><</span>datalist<span>></span> có thể rỗng
+          </li>
+          <li>
+            Giá trị của <span class="highlight">role</span> trong thẻ <span class="highlight"><span><</span>caption<span>></span></span> bị loại bỏ
+          </li>
+          <li>
+            Thẻ <span><</span>p<span>></span> không cho phép chứa những block element, table element hay floated and positioned block-level elements bên trong nó
+          </li>
+          <li>
+            Xoá thẻ keygen: tạo ra các keygen dành cho form
+          </li>
+          <li>
+            Xoá thẻ menu và menuitem - các thẻ tạo context menu
+          </li>
+          <li>
+            Bỏ showModalDialog method
+          </li>
+          <li>
+            Không còn quy định ngặt nghèo của doctype
+            <span><</span>!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"<span>></span>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</html>

@@ -11,6 +11,8 @@
         background-color: #f1f1f1;
         padding: 30px 0;
         font-family: sans-serif;
+        font-size: 18px;
+        line-height: 30px;
       }
       .container {
         width: 768px;
@@ -38,7 +40,7 @@
   </head>
   <body>
 
-  <div class="container">
+  <section class="container">
     <h1>Những thay đổi của HTML5.1 so với HTML5</h1>
     <ol class="change-list">
       <li><a href="#section1">Thêm chức năng context menu - dùng thẻ menu + menuitem</a></li>
@@ -58,11 +60,10 @@
     </ol>
 
     <section id="section1">
-      <h2>I Contextmenu</h2>
+      <h3>I Contextmenu</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: firefox</li>
-        <li>Sử dụng thẻ menu và menuitem</li>
-        <li>Một menu tag chứa nhiều menuitem tags</li>
+        <li>Sử dụng thẻ <span><</span>menu<span>?</span> chứa nhiều <span><</span>menuitem<span>></span></li>
         <li>Mỗi menuitem có thể là 1 trong các kiểu:
           <ol>
             <li>checkbox: chọn hay bỏ 1 option</li>
@@ -71,41 +72,41 @@
           </ol>
         </li>
         <li>Ví dụ:
-          <p contextmenu="popup-menu">Right click on this text (support by firefox)</p>
+          <p contextmenu="popup-menu">Right click on this text (supported on firefox)</p>
           <menu type="context" id="popup-menu">
             <menuitem type="checkbox">Checkbox</menuitem>
             <menuitem type="radio">Radio</menuitem>
-            <menuitem type="radio">Male</menuitem>
-            <menuitem type="radio">Femail</menuitem>
-            <menuitem type="command" label="command" onclick="alert('Hello! This is onclick action.')">Command</menuitem>
+            <menuitem type="radio">Radio</menuitem>
+            <menuitem type="command" label="command" onclick="alert('Bạn vừa chọn command')">Command</menuitem>
           </menu>
+          <p>Code: </p>
+          <p data-height="211" data-theme-id="0" data-slug-hash="ypwgLP" data-default-tab="html" data-user="pein1625" data-embed-version="2" data-pen-title="Context menu" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/ypwgLP/">Context menu</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </li>
+        <li>So với HTML5: tính năng thêm mới</li>
+        <li>(bị xoá ở phiên bản HTML5.2)</li>
       </ul>
     </section>
 
     <section id="section2">
-      <h2>II Ẩn hiện nội dung với thẻ details và summary</h2>
+      <h3>II Ẩn hiện nội dung với thẻ details và summary</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: firefox, chrome, safari</li>
         <li>Thẻ detail sẽ chứa 1 thẻ summary và nhiều nội dung khác,
          các nội dung này sẽ được ẩn/hiện khi click vào nội dung thẻ summary</li>
         <li>Ví dụ:
-          <details>
-            <summary>Thẻ summary - click vào dây để xem thêm thông tin</summary>
-            <p>Đây là những thông tin trong thẻ detail</p>
-            <p>Những thông tin này bị ẩn đi ở mặc định, và được ẩn hiện khi click vào summary element</p>
-          </details>
-          <details>
-            <summary>Thẻ summary</summary>
-            <p>Đây là những thông tin trong thẻ detail</p>
-            <p>Những thông tin này bị ẩn đi ở mặc định, và được ẩn hiện khi click vào summary element</p>
-          </details>
+          <p data-height="184" data-theme-id="0" data-slug-hash="GyeZje" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="detail tag" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/GyeZje/">detail tag</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+        <li>
+          So với html5: Tính năng thêm mới. Ở HTML5 thì chúng có thể dùng javascript
+          hoặc dùng 1 thẻ input(type="checkbox") ẩn, sau đó bắt sự kiện checked / uncheck để thực hiện.
         </li>
       </ul>
     </section>
 
     <section id="section3">
-      <h1>III Thêm các input type</h2>
+      <h1>III Thêm các input type</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: chrome + edge</li>
         <li>Các input type được thêm: month, week, datetime-local</li>
@@ -115,11 +116,12 @@
           <p data-height="232" data-theme-id="0" data-slug-hash="QaJMdb" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="More input type" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/QaJMdb/">More input type</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
           <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </li>
+        <li>So với HTML5: Tính năng thêm mới</li>
       </ul>
     </section>
 
     <section id="section4">
-      <h2>IV Responsive image</h2>
+      <h3>IV Responsive image</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: chrome, firefox, edge, safari</li>
         <li>Sử dụng thẻ picture cùng với các thuộc tính srcset, size để responsive hay thay đổi hình ảnh trên các màn hình khác nhau.</li>
@@ -128,153 +130,164 @@
         <li>Thẻ picture: cho phép thay những ảnh khác nhau dựa theo sự thay đổi kích thước màn hình, đồng thời có thể thêm
         các thuộc tính srcset và size</li>
         <li>Ví dụ
-          <p data-height="371" data-theme-id="0" data-slug-hash="qpQPMW" data-default-tab="html" data-user="pein1625" data-embed-version="2" data-pen-title="qpQPMW" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/qpQPMW/">qpQPMW</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <p data-height="322" data-theme-id="0" data-slug-hash="WdmoqR" data-default-tab="html" data-user="pein1625" data-embed-version="2" data-pen-title="responsive img" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/WdmoqR/">responsive img</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
           <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+        <li>
+          So với HTML5: Tính năng thêm mới. Ở HTML5 chúng ta phải load nhiều ảnh một lúc,
+          sau đó dùng media queries hay javascript để ẩn/hiện các ảnh đó.
+          Còn những tính năng thêm ở HTML5.1 để trình duyệt kiểm tra điều kiện (màn hình) rồi sau đó mới load 1 ảnh phù hợp, từ đó tăng tốc độ load trang và giảm bớt dung lượng web(app).
         </li>
       </ul>
     </section>
 
     <section id="section5">
-      <h2>V Chức năng popup với thẻ dialog</h2>
+      <h3>V Chức năng popup với thẻ dialog</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: firefox, chrome</li>
+        <li>Thẻ dialog có thể dùng làm popup của trang web</li>
+        <li>Thẻ dialog có thể dùng được các function javascript:
+          <ul>
+            <li>show(): hiện dialog</li>
+            <li>close(): ẩn dialog</li>
+            <li>showModal(): hiện modal dialog</li>
+          </ul>
+        </li>
+        <li>Style lớp nền nằm dưới dialog với ::backdrop pseudo element</li>
         <li>Ví dụ:
-          <p data-height="228" data-theme-id="0" data-slug-hash="xpQLLY" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="dialog element" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/xpQLLY/">dialog element</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <p data-height="247" data-theme-id="0" data-slug-hash="xpQLLY" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="dialog element" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/xpQLLY/">dialog element</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
           <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </li>
+        <li>So với HTML5: Tính năng thêm mới</li>
       </ul>
     </section>
 
     <section id="section6">
-      <h2>VI Chức năng validate form</h2>
+      <h3>VI Chức năng validate form</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: chrome, firefox</li>
+        <li>Chức năng validate HTML5.1 có thể kiểm tra những field trống, email, url, number không hợp lệ</li>
+        <li>Để tắt chức năng validate, chỉ cần thêm thuộc tính novalidate vào thẻ <span><</span>form<span>></span></li>
         <li>Ví dụ:
-          <form id="my-form">
-            <input type="text" placeholder="Không điền gì vào ô này" required>
-            <input type="submit" value="Click to submit">
-          </form>
-          <form>
-            <input type="email" placeholder="Thử điền 1 email sai" required>
-            <input type="submit" value="Click to submit">
-          </form>
-          <p>Trình duyệt sẽ validate và thông báo lỗi ngay(nếu có) tới user</p>
+          <p data-height="312" data-theme-id="0" data-slug-hash="MrxeoX" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="Validate form" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/MrxeoX/">Validate form</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </li>
+        <li>So với HTML5: Tính năng này giống với HTML5,
+         nhưng ở HTML5.1 thông báo lỗi được hiện ngay tới user dưới dạng tooltip</li>
       </ul>
     </section>
 
-
     <section id="section7">
-      <h2>VII Lồng thẻ header và footer</h2>
+      <h3>VII Lồng thẻ header và footer</h3>
       <ul class="detail-list">
         <li>HTML5.1 cho phép lồng thẻ header và footer trong thẻ header và footer khác</li>
         <li>Nhưng 2 thẻ header/footer lồng nhau không được là cha con trực tiếp của nhau
           và chúng cùng được bọc bởi 1 thẻ có ngữ nghĩa (section, article, aside)
         </li>
         <li>Ví dụ:
-          <pre>
-<code>
-  &lt;article&gt;
-    &lt;header&gt; // thẻ header cha được bọc trong thẻ article
-      &lt;section&gt;
-        &lt;header&gt; // thẻ header con được bọc trong thẻ section
-        &lt;/header&gt;
-      &lt;/section&gt;
-  &lt;/article&gt;
-</code>
-          </pre>
+          <p data-height="221" data-theme-id="0" data-slug-hash="RxdaQO" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="RxdaQO" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/RxdaQO/">RxdaQO</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </li>
+        <li>So với HTML5: HTML5 không cho phép lồng thẻ header/footer vào thẻ header/footer khác</li>
       </ul>
     </section>
 
     <section id="section8">
-      <h2>VIII Sử dụng width=0 với ảnh</h2>
+      <h3>VIII Sử dụng width=0 với ảnh</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: chrome, firefox, safari, edge, IE</li>
         <li>Cho phép thêm thuộc tính width="0" vào ảnh, dùng khi bạn không muốn ảnh được hiển thị</li>
         <li>Ví dụ:
-          <div>
-            <span>Ảnh với width="200px"</span>
-            <img src="1.png" width="200px" alt="">
-          </div>
-          <div>
-            <span>Ảnh với width="0" (không hiển thị)</span>
-            <img src="1.png" width="0" alt="">
-          </div>
+          <p data-height="286" data-theme-id="0" data-slug-hash="Rxdore" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="img widht=0" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/Rxdore/">img widht=0</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </li>
+        <li>So với HTML5: HTML5 không hỗ trợ thuộc tính width="0"</li>
       </ul>
     </section>
 
     <section id="section10">
-      <h2>XI Phân tách ngữ cảnh trình duyệt để tránh lừa đảo</h2>
+      <h3>XI Phân tách ngữ cảnh trình duyệt để tránh lừa đảo</h3>
       <ul class="detail-list">
         <li>Sử dụng những link truyền thống có thể khiến trang web dễ bị tấn công lừa đảo</li>
         <li>HTML5.1 đưa ra thuộc tính rel="noopener" dùng để phân chia ngữ cảnh trình duyệt,
          từ đó bảo vệ trang web tốt hơn.</li>
+        <li>
+          Khi không sử dụng thuộc tính rel="noopener" cho những link có target="_blank"
+          thì trang mới mở ra có thể điều khiển trang web cũ thông qua object window.opener <br />
+          Điều này có thể bị khai thác bởi những kẻ lừa đảo, bằng cách họ chuyển hướng trang web hiện tại thành một trang web mới có nội dung giống hoàn toàn, và bổ xung thêm vài chức năng để người dùng nhập thông tin cá nhân.
+        </li>
         <li>Ví dụ:
+          <a href="other.html" target="_blank">Click vào link này</a><br>
+          Để phòng tránh trường hợp trên, HTML5.1 đưa thêm một thuộc tính rel="noopener" vào thẻ a, link. Điều này sẽ khiến cho window.opener = null ở trang web mới.
+          <br>
           <code>
             <span><</span>a href="#!" rel="noopener"<span>></span>
             Your link that won't have make trouble
             <span><</span>/a<span>></span>
           </code>
+          <br>
+          <a href="other.html" target="_blank" rel="noopener">Click vào link này(rel="noopener")</a><br>
         </li>
+        <li>So với HTML5: thuộc tính được thêm mới, bảo vệ trang web tốt hơn</li>
       </ul>
     </section>
 
     <section id="section11">
-      <h2>Tạo một thẻ option rỗng</h2>
+      <h3>Tạo một thẻ option rỗng</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: chrome, firefox, edge, IE</li>
-        <li>option thường là thẻ con của các thẻ select, optgroup, datalist</li>
+        <li>Option là thẻ con của các thẻ select, optgroup, datalist</li>
         <li>HTML5.1 cho phép tạo một option rỗng </li>
         <li>Ví dụ:
-          <select>
-            <option>Option should be selected</option>
-            <option></option>
-            <option>Other option</option>
-            <option>Other option</option>
-            <option>Other option</option>
-          </select>
+          <p data-height="194" data-theme-id="0" data-slug-hash="opVYzd" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="option rỗng" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/opVYzd/">option rỗng</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </li>
       </ul>
     </section>
 
     <section id="section12">
-      <h2>XII Sử dụng thẻ figcaption linh hoạt hơn</h2>
+      <h3>XII Sử dụng thẻ figcaption linh hoạt hơn</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: tất cả trình duyệt</li>
         <li>Thẻ figcation thường được đặt trong thẻ figure và chứa tiêu đề, tên, chú thích của một hình ảnh, bản đồ, tranh ảnh</li>
-        <li>Trước đây, thẻ figcaption chỉ có thể là first child hoặc last child của thẻ figure</li>
         <li>Từ HTML5.1 thì thẻ figcaption có thể nằm ở bất cứ đâu trong thẻ figure</li>
+        <li>So với HTML5: HTML5 yêu cầu thẻ figcaption phải là first child hoặc last child của thẻ figure <br />
+          Ví dụ: Nếu muốn sử dụng nhiều thẻ figcaption đi với nhiều ảnh, ta phải đưa mỗi cặp của chúng vào 1 thẻ figure khác nhau
+          Nhưng với HTML5.1 ta chỉ cần 1 thẻ figure cho tất cả.
+        </li>
+        <li>Ví dụ:
+          <p data-height="412" data-theme-id="0" data-slug-hash="ypwmwB" data-default-tab="html" data-user="pein1625" data-embed-version="2" data-pen-title="figcaption" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/ypwmwB/">figcaption</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
       </ul>
     </section>
 
     <section id="section13">
-      <h2>XIII Sử dụng thẻ figcaption linh hoạt hơn</h2>
+      <h3>XIII Xắp xếp các thẻ thead, tfoot</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: tất cả trình duyệt</li>
         <li>HTML5.1 xắp xếp lại các thể thead, tfoot cho đúng với thực tế</li>
         <li>Tức là thẻ thead phải được đưa lên đầu, còn thẻ tfoot được đưa xuống cuối bảng</li>
         <li>Ví dụ:
-          <table>
-            <tbody><tr><td>1. thẻ tbody</td></tr></tbody>
-            <tfoot><tr><td>2. thẻ tfooter</td></tr></tfoot>
-            <thead><tr><td>3. thẻ thead</td></tr></thead>
-          </table>
-          <p>=> trình duyệt tự xắp xếp lại các thẻ thead, tfoot</p>
+          <p data-height="265" data-theme-id="0" data-slug-hash="mpoOmo" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="thead, tfoot sort" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/mpoOmo/">thead, tfoot sort</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </li>
+        <li>So với HTML5: HTML5 không tự xắp xếp các thẻ thead, tfoot, tbody</li>
       </ul>
     </section>
 
     <section id="section14">
-      <h2>XIV Thêm đặc tính oncopy, oncut, onpast</h2>
+      <h3>XIV Thêm tính năng oncopy, oncut, onpast</h3>
       <ul class="detail-list">
         <li>Trình duyệt hỗ trợ: chrome, firefox, safari</li>
-        <li>Ví dụ oncopy: <input type="text" value="copy this text" oncopy="alert('bạn vừa copy')"></li>
-        <li>Ví dụ oncut: <input type="text" value="cut this text" oncut="alert('bạn vừa cut')"></li>
-        <li>Ví dụ oncopy: <input type="text" placeholder="paste in this field" onpaste="alert('bạn vừa paste')"></li>
+        <li>HTML5.1 bổ xung các tính năng bắt sự kiện oncopy, oncut, onpaste</li>
+        <li>Ví dụ:
+          <p data-height="260" data-theme-id="0" data-slug-hash="ypwVPg" data-default-tab="html,result" data-user="pein1625" data-embed-version="2" data-pen-title="oncut, oncopy, onpaste" class="codepen">See the Pen <a href="https://codepen.io/pein1625/pen/ypwVPg/">oncut, oncopy, onpaste</a> by pein (<a href="https://codepen.io/pein1625">@pein1625</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+        <li>So với HTML5: Tính năng được thêm mới.</li>
       </ul>
     </section>
-  </div>
+  </section>
   </body>
 </html>
