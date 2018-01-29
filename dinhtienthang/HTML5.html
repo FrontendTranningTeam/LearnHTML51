@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>HTML5</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f1f1f1;
+        padding: 30px 0;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+      }
+      .container {
+        width: 768px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+      }
+      .change-list {
+      }
+      .change-list li {
+        padding: 10px 0;
+      }
+      .change-list a {
+        text-decoration: none;
+        color: #333;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+      .detail-list li {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+  <section class="container">
+    <h1>HTML5</h1>
+    <ol class="change-list">
+      <li><a href="#section1">Đặc tính mới của HTML5</a></li>
+      <li><a href="#section2">Các trình duyệt hỗ trợ</a></li>
+      <li><a href="#section3">Sự thay đổi - Tính năng mới</a></li>
+      <li><a href="#section4">Cách code</a></li>
+    </ol>
+
+    <section id="section1">
+      <h3>I. Đặc tính mới của HTML5</h3>
+      <ul class="detail-list">
+        <li>Thẻ semantic mới và được sử dụng nhiều như:
+          <ol>
+            <li>header: Phần đầu  của trang web, cũng có thể là phần đầu của bài viết</li>
+            <li>footer: Phần cuối của trang web</li>
+            <li>article: Chứa các khối nội dung độc lập trên trang web, ví dụ như: các bài viết, các đoạn commen</li>
+            <li>section: Dùng để nhóm các phần nội dung liên quan đến nhau, và thông thường mỗi section sẽ có tiêu đề riêng của nó.</li>
+            <u> Note: </u> Một section có thể chứa nhiều article có nội dung liên quan, hoặc nếu 1 article có nội dung lớn thì nó cũng có thể chứa nhiều section. 
+            <li>nav: Chứa điều hướng chính của trang web (Menu chính)</li>
+            <li>aside: Nếu aside nằm trong article thì nó chứa thông tin liên quan đến article nhưng không quá cần thiết đối với article (ví dụ như 1 đoạn chú thích cho bài viết hay các đường link đến bài viết cùng chuyên mục). Nếu aside nằm ngoài article thì nó chứa thông tin liên quan đến toàn bộ trang nhưng không phải thông tin chính (ví dụ như danh sách các bài viết mới nhất, thông tin quảng cáo, ...) </li>
+          </ol>
+        </li>
+
+        <li>Thẻ graphic mới như:
+          <ol>
+            <li>SVG: Mô tả đồ họa 2D (Sử dụng các phần mềm như Illustrator để render ra code HTML)</li>
+            <li>Canvas: Nội dung của canvas được xây dựng từ Javascript</li>
+          </ol>
+        </li>
+
+        <li>Thẻ đa phương tiện như:
+          <ol>
+            <li>audio: Định nghĩa những nội dung về âm thanh</li>
+            <li>video: Định nghĩa một video hoặc 1 movie</li>
+          </ol>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section2">
+      <h3>II. Các trình duyệt hỗ trợ</h3>
+      <ul class="detail-list">
+        <li>Firefox</li>
+        <li>Internet explorer. Các phiên bản IE8 trở về trước sẽ không cho phép những thành phần lạ. Vì vậy cần phải chèn 1 đoạn script của HTML5Shiv như sau:
+          <p data-height="265" data-theme-id="0" data-slug-hash="bLGbpW" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="bLGbpW" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/bLGbpW/">bLGbpW</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+        <li>Chrome</li>
+        <li>Safari</li>
+        <li>Opera</li>
+
+      </ul>
+    </section>
+
+    <section id="section3">
+      <h1>III. Sự thay đổi - Tính năng mới</h3>
+      So với HTML thì HTML5 không khác nhau là mấy ngoại trừ:
+
+      <ul>
+        <li>HTML5 cho phép nhúng video và audio trong khi HTML thì không</li>
+        <li>Graphics trong HTML phải cài thêm Flash để được hỗ trợ thì HTML5 không cần thay vào đó là 2 thẻ 'svg' và 'canvas'</li>
+        <li>Lưu trữ: Trong HTML, bộ nhớ cache thì được sử dụng như nơi lưu trữ tạm thời. Trong HTML5, cache của ứng dụng, database và nơi lưu trữ web thì được sử dụng hoàn toàn</li>
+      </ul>
+
+    </section>
+
+    <section id="section4">
+      <h3>IV. Cách code</h3>
+      <ul class="detail-list">
+        <li>Trước tiên khai báo Doctype nằm ngay dòng đầu tiên</li>
+        <li>Sau đó khai báo charset encoding: Để hiện thị các kí tự, văn bản có dấu</li>
+        <p data-height="265" data-theme-id="0" data-slug-hash="ddybaX" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="ddybaX" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/ddybaX/">ddybaX</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        <li>Khai báo viewport</li>
+        <p data-height="265" data-theme-id="0" data-slug-hash="jZONoe" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="viewport" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/jZONoe/">viewport</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <ol>
+          <li>width=device-width: set chiều rộng của trang theo chiều rộng của màn hình thiết bị (kích cỡ khác nhau tùy vào thiết bị)</li>
+          <li>initial-scale=1.0: set độ phóng(to/ nhỏ) ban đầu khi mà trang load lần đầu </li>
+          <u>NOTE:</u> thuộc tính này để dùng khi muốn responsive design.
+        </ol>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+      </ul>
+    </section>
+
+    
+  </section>
+  </body>
+</html>
