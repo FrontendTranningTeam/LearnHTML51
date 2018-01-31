@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Bootstrap 3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f1f1f1;
+        padding: 30px 0;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+      }
+      .container {
+        width: 768px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+      }
+      .change-list {
+      }
+      .change-list li {
+        padding: 10px 0;
+      }
+      .change-list a {
+        text-decoration: none;
+        color: #333;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+      .detail-list li {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+  <section class="container">
+    <h1>Bootstrap 3</h1>
+    <ol class="change-list">
+      <li><a href="#section1">CSS/ Components</a></li>
+      <li><a href="#section2">Các trình duyệt hỗ trợ</a></li>
+    </ol>
+
+    <section id="section1">
+      <h3>I. CSS/ Components</h3>
+      <ol class="detail-list">
+        <li>Containers
+          <ul>
+            <li>'.container'
+              <ul>
+                <li>>= 1200px: 1170px</li>
+                <li>>= 992px: 970px</li>
+                <li>>= 768px: 750px</li>
+                <li>< 768px: None (auto)</li>
+                <li>Gutter width (khoảng cách giữa 2 cột): 30px (15px mỗi bên)</li>
+              </ul>
+            </li>
+            <li>'containter-fluid': full-width</li>
+          </ul>
+        </li>
+
+        <li>Grid System:
+          <ul>
+            <p data-height="265" data-theme-id="0" data-slug-hash="NyPKVX" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="Grid System" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/NyPKVX/">Grid System</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            <li>Grid system trong Bootstrap được chia làm 12 cột </li>
+            <li>'.row' phải được đặt trong '.container' hoặc '.container-fluid'</li>
+            <li>Nội dung đặt bên trong mỗi cột và mỗi cột phải là thẻ con ngay sau '.row'</li>
+            <li>Grid option: Có 4 loại cột tương ứng với 4 kích cỡ màn hình khác nhau
+                <ul>
+                  <li>'col-xs-' < 768px </li>
+                  <li>'col-sm-' >= 768px </li>
+                  <li>'col-md-' >=992px </li>
+                  <li>'col-lg-' >=1200px </li>
+                </ul>
+            </li>
+            <li>Offsetting Columns
+              <p data-height="265" data-theme-id="0" data-slug-hash="oEgjvj" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="oEgjvj" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/oEgjvj/">oEgjvj</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            </li>
+
+            <li>Nesting columns:
+              <p data-height="265" data-theme-id="0" data-slug-hash="mXyeGp" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="mXyeGp" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/mXyeGp/">mXyeGp</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            </li>
+
+            <li>Column ordering:
+              <p data-height="265" data-theme-id="0" data-slug-hash="aqzdEL" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="Column Ordering" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/aqzdEL/">Column Ordering</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            </li>
+          </ul>
+        </li>
+
+        <li>Images:
+          <ul>
+            <li>Responsive images:
+              <p> '.img-responsive': max-width: 100%, height: auto, display: block.  </p>
+            </li>
+
+            <li>Image shapes:
+              <p>'.img-rounded'</p>
+              <p>'.img-circle'</p>
+              <p>'.img-thumbnail'</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>Căn giữa một khối
+          <p>'.center-block': display: block; margin-left: auto; margin-right: auto;</p>
+        </li>
+
+        <li>Clearfix
+          <p>Thuộc tính '.clearfix' dùng để xóa các float.</p>
+        </li>
+
+        <li>Responsive embed (responsive nhúng)
+          <p data-height="265" data-theme-id="0" data-slug-hash="zRxXmz" data-default-tab="html,result" data-user="thang21" data-embed-version="2" data-pen-title="Responsive embed" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/zRxXmz/">Responsive embed</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+
+        <li>Glyphicons
+          <p>Bootstrap 3 có hỗ trợ icon bằng Glyphicons: 'glyphicon glyphicon-align-left'</p>
+        </li>
+
+      </ol>
+    </section>
+
+    <section id="section2">
+      <h3>II. Các trình duyệt hỗ trợ</h3>
+      <ul class="detail-list">
+        <li>Mobiles devices
+          <ol>
+            <li>Firefox</li>
+            <li>Chrome</li>
+            <li>Safari</li>
+          </ol>
+        </li>
+
+        <li>Desktop browsers
+          <ol>
+            <li>Firefox</li>
+            <li>Chrome</li>
+            <li>Opera</li>
+            <li>IE for Windows: IE 8+</li>
+            <li>Safari for Mac</li>
+          </ol>
+        </li>
+      </ul>
+    </section>
+    
+  </section>
+  </body>
+</html>
