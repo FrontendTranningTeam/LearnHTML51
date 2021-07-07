@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>SASS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f1f1f1;
+        padding: 30px 0;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+      }
+      .container {
+        width: 768px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+      }
+      .change-list {
+      }
+      .change-list li {
+        padding: 10px 0;
+      }
+      .change-list a {
+        text-decoration: none;
+        color: #333;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+      .detail-list li {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+  <section class="container">
+    <h1>SASS</h1>
+    <ol class="change-list">
+      <li><a href="#section1">Đặc tính của SASS</a></li>
+    </ol>
+
+    <section id="section1">
+      <h3>I. Đặc tính của SASS</h3>
+      <ul class="detail-list">
+        <li>Varibles - Biến: $tenbien: thuộc tính
+          <p data-height="265" data-theme-id="0" data-slug-hash="GQReRm" data-default-tab="css,result" data-user="thang21" data-embed-version="2" data-pen-title="GQReRm" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/GQReRm/">GQReRm</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+
+        <li>Nesting:
+          <p>Nesting được hiểu là sẽ viết css theo parent - child. Những thẻ thuộc child sẽ nằm bên trong thẻ parent.<br>
+            <u>NOTE:</u> Nếu nest quá nhiều thì sẽ dẫn đến tình trạng css bị quá tải khiến tốc độ tải trang chậm hơn so với bình thường. => mỗi một module là tên 1 class riêng biệt, tránh nesting quá nhiều.
+          </p>
+        </li>
+
+        <li>Partials - Import:
+          <p>Partials được hiểu là chia nhỏ, phân nhánh. Dùng dấu gạch dưới "_" để đặt tên cho các file nhỏ. Và sau cùng là dùng @import để tập hợp các file partials và khi render ra CSS, nó sẽ được tập hợp vào cùng 1 file</p>
+        </li>
+
+        <li>Mixins:
+          <p>Thuộc tính Mixins là thuộc tính cho phép coder dùng lại 1 đoạn code mà không phải viết đi viết lại nhiều lần. Ta có thể truyền vào 1 biến bên trong mixin và khi dùng thì có thể thay đổi biến tùy ý muốn. <br> Để tạo mixin: @mixin mixin_name($variable) {...} <br> Khi muốn chèn mixin vào một class nào đó, thêm @include mixin_name($varible); </p>
+          <p data-height="265" data-theme-id="0" data-slug-hash="jZOJxJ" data-default-tab="css,result" data-user="thang21" data-embed-version="2" data-pen-title="Mixins" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/jZOJxJ/">Mixins</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+
+        <li>Placeholder:
+          <p>Sử dụng @extend cho phép chúng ta chia sẻ 1 đoạn CSS từ selector này sang selector khác.<br> Để tạo placeholder: %extend_name {...} <br> Khi muốn chèn placeholder vào một class nào đó, thêm @extend %extend_name;</p>
+          <p data-height="265" data-theme-id="0" data-slug-hash="bLGZXZ" data-default-tab="css,result" data-user="thang21" data-embed-version="2" data-pen-title="Extend" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/bLGZXZ/">Extend</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script><br>
+          
+          <u>NOTE:</u> Sự khác biệt giữa Mixins và Extend/Placeholder: 'Mixins' có thể truyền vào biến nhưng 'Extend' thì không.<br> Mixins khá tiện nếu có nhiều biến khác nhau. Tuy vậy, việc viết Mixins sẽ bị lặp lại code nhiều lần nếu biến đó giữ nguyên hoặc không truyền biến gì. Chính vì thế mà ta sẽ dùng Extend và trường hợp này, sẽ khiến cho tất cả class có chung 1 thuộc tính sẽ viết trên cùng 1 dòng.
+          <p data-height="265" data-theme-id="0" data-slug-hash="VQwNWB" data-default-tab="css,result" data-user="thang21" data-embed-version="2" data-pen-title="Mixin vs Extend" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/VQwNWB/">Mixin vs Extend</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </li>
+
+        <li>Extend 
+          <p>Tương tự như 'Placeholder', muốn lấy 1 đoạn CSS từ 1 class này sang class khác. <br> Để tạo extend: %extend_name {...} <br> Khi muốn chèn extend vào một class nào đó, thêm @extend .class_name;</p></p>
+          <p data-height="265" data-theme-id="0" data-slug-hash="mXdgQY" data-default-tab="css,result" data-user="thang21" data-embed-version="2" data-pen-title="mXdgQY" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/mXdgQY/">mXdgQY</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          
+        </li>
+
+      </ul>
+    </section>
+  </section>
+  </body>
+</html>

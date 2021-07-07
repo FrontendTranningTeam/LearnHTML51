@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>BEM</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f1f1f1;
+        padding: 30px 0;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+      }
+      .container {
+        width: 768px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+      }
+      .change-list {
+      }
+      .change-list li {
+        padding: 10px 0;
+      }
+      .change-list a {
+        text-decoration: none;
+        color: #333;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+      .detail-list li {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+  <section class="container">
+    <h1>BEM</h1>
+    <ol class="change-list">
+      <li><a href="#section1">Khái niệm BEM</a></li>
+      <li><a href="#section2">Đặc tính của BEM</a></li>
+      <li><a href="#section3">BEM trong SASS</a></li>
+    </ol>
+    
+    <section id="section1">
+      <h3>I. Khái niệm BEM</h3>
+       <ul class="detail-list">
+        <li>BEM là cách đặt tên cho class: đặt rõ ràng, sao cho người đọc có thể hiểu nhiệm vụ của class đó để làm gì</li>
+        <li>BEM: Block, Element, Modifier</li>
+      </ul>
+    </section>
+
+    <section id="section2">
+      <h3>II. Đặc tính của BEM</h3>
+      <ul class="detail-list">
+
+        <li>Block: .btn
+          <p>1 module riêng biệt</p>
+        </li>
+
+        <li>Element: .btn__price
+          <p>Thành phần dựa vào 1 block</p>
+          <p>Dùng dấu gạch dưới</p>
+        </li>
+
+        <li>Modifier: .btn--big, .btn--small
+          <p>Modifier dùng để thay đổi style cho block hoặc cũng có thể dùng để thay đổi style cho element</p>
+          <p>Dùng dấu gạch ngang</p>
+        </li>
+
+        <p data-height="265" data-theme-id="0" data-slug-hash="jZOoGG" data-default-tab="css,result" data-user="thang21" data-embed-version="2" data-pen-title="BEM" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/jZOoGG/">BEM</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script> <br>
+
+        <u>NOTE:</u> Khi dùng BEM không nest các thành phần con vào thành phần cha không liên quan.
+      </ul>
+    </section>
+
+    <section id="section3">
+      <h3>III. BEM trong SASS</h3>
+       <ul class="detail-list">
+        <li>Khi viết BEM luôn để các class riêng biệt, không nest lại với nhau</li>
+        <li>Dùng '&--' và '&__'</li>
+        <p data-height="265" data-theme-id="0" data-slug-hash="ddyEgP" data-default-tab="css,result" data-user="thang21" data-embed-version="2" data-pen-title="BEM in SASS" class="codepen">See the Pen <a href="https://codepen.io/thang21/pen/ddyEgP/">BEM in SASS</a> by Thang (<a href="https://codepen.io/thang21">@thang21</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+      </ul>
+    </section>
+
+  </section>
+  </body>
+</html>
